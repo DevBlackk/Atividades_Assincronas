@@ -1,8 +1,8 @@
-class idPessoa{ 
+class Pessoa{ 
     constructor(nome, idade, email){
     this.nome = nome;
     this.idade = idade;
-    this.idade = email;
+    this.email = email;
     }
 }
 
@@ -13,6 +13,6 @@ let inputEmail = document.getElementById("email");
 const confirma = document.getElementById("cadastrar");
 
 confirma.addEventListener('click', () => {
-    let cadastro = new idPessoa(inputNome.value, inputIdade.value, inputEmail.value);
+    let cadastro = new Pessoa(inputNome.value, inputIdade.value, inputEmail.value);
     console.log(cadastro);
 });
